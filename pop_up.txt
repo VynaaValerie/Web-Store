@@ -1,0 +1,124 @@
+==== UNTUK INDEX.HTML ====
+   
+
+ <div class="ff">
+        <div class="link">
+            <a href="#harga-ff">
+                    <img src="./images/ff.png" alt="">
+                    <div class="judul-produk">Free Fire</div>
+            </a>
+        </div>
+        <div class="overlay" id="harga-ff">
+            <div class="popup">
+                <h2>HARGA FREE FIRE</h2>
+                <a class="close" href="#populer">&times;</a>
+                <br>
+                <div class="content">
+                    70 Diamonds  : 
+                    <br>    
+                    <span class="harga">Rp 10.000</span>
+                    <br>
+                    140 Diamonds : 
+                    <br>
+                    <span class="harga">Rp 20.000</span>
+                    <br>
+                    210 Diamonds : 
+                    <br>
+                    <span class="harga">Rp 30.000</span>
+                    <br>
+                    280 Diamonds : 
+                    <br>
+                    <span class="harga">Rp 40.000</span>
+                    <br>
+                    355 Diamonds : 
+                    <br>
+                    <span class="harga">Rp 50.000</span>
+                    <br>
+                    500 Diamond  : 
+                    <br>
+                    <span class="harga">Rp 70.000</span>
+                    <br>
+                    720 Diamonds : 
+                    <br>
+                    <span class="harga">Rp 100.000</span>
+                    <br>
+                    1000 Diamonds : 
+                    <br>
+                    <span class="harga">Rp 130.000</span>
+                    <br>
+                    M. Mingguan  : 
+                    <br>
+                    <span class="harga">Rp 30.000</span>
+                    <br>
+                    M. Bulanan   : 
+                    <br>
+                    <span class="harga">Rp 150.000</span>
+                    <br>
+                    <a class="pesan" href="https://wa.me/6282132873886" 
+                    target="_blank" 
+                    rel="noopener noreferrer"><img src="./images/whatsapp.png" alt="">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+==== UNTUK STYLE.CSS ====
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--dark-blue);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: var(--white);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: #06D85F;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}

@@ -1,0 +1,56 @@
+===== UNTUK INDEX.HTML =====
+
+<div id="home" class="slider">
+        <h4>Klik Disini Untuk Slide Gambar</h4>
+        <input type="radio" name="choose" id="" class="choose_1">
+        <input type="radio" name="choose" id="" class="choose_2">
+        <div class="slides">
+            <img src="images/slide-1.jpg" alt="" class="slide s1">
+            <img src="images/slide-2.jpg" alt="" class="slide">
+        </div>
+</div>
+
+
+
+==== UNTUK STYLE.CSS ====
+.slider
+{
+    margin-top: 10%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 65%;
+}
+
+.slider h4
+{
+    margin-top: 20%;
+}
+
+.slides
+{
+    display: flex;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.slides img 
+{
+    border-radius: 10px;
+}
+
+.slide
+{
+    width: 50rem;
+    transition: .5s;
+}
+
+.choose_1:checked ~ .slides > .s1
+{
+    margin-left: -0rem;
+}
+
+.choose_2:checked ~ .slides > .s1
+{
+    margin-left: -50rem;
+}
